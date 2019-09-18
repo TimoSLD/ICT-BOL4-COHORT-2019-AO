@@ -1,0 +1,11 @@
+img {
+  float: right;
+}
+ 
+h5 {
+    display: inline-block; 
+    width: 50%;
+}
+h5 {
+    float: inherit; 
+}
