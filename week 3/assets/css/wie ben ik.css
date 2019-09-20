@@ -1,6 +1,7 @@
-img {
+#img1 {
   float: right;
-}
+  margin-bottom: 10px;
+  }
  
 h5 {
     display: inline-block; 
@@ -50,3 +51,13 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+#img2 {
+
+  float: left;
+  margin-bottom: 10px;
+  }
+
+#wie-ben-ik-img {
+  float: right;
+  }
