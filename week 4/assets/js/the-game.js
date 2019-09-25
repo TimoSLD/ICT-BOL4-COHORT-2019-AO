@@ -1,48 +1,79 @@
 {
-  alert("Welkom bij the-game!");
+  alert("Welkom bij Prison Escape!");
 }
  
 var naam = prompt("Wat is uw naam?");
 var naam = alert (' welkom ' +naam+ ', leuk dat je deze game speelt');
 
-function askQuestion() {
-  return prompt("What the name of the company that developed the javascript language?", "");
-}
-
 var vraag1 = prompt("je staat op het punt om te ontsnappen uit de gevangenis. \
-Je komt terecht op een punt dat je naar het bos of strand kan gaan\n1: ga het bos in.\n2:ga naar het strand.")
+Je komt terecht op een punt dat je naar het bos of strand kunt gaan\n1: ga het bos in.\n2:ga naar het strand.")
+
 if (vraag1 == 1){
-  alert("Goed, klik op OK/ENTER om verder te gaan")
+    alert("Goed, op het strand staan bewakers.")
 } else if (vraag1 == 2) {
   alert("Er staan bewakers op het strand, je bent opgepakt!")
-location.reload(true);
+  location.reload (true)
 }
-
-if (vraag1 == 1)
-var vraag2 = prompt("je bent nu in het bos en je komt op een pad terecht die in tweeen splitst. je kan naar rechts en links.\n1: ga naar rechts.\n2:ga naar links")
-
-if (vraag2 == 1){
-  prompt ("goed")
-} else if (vraag2 == 2){
-  alert ("fout")
-  location.reload(true);
+if (vraag1 == 1){
+  var vraag2 = prompt("je bent nu in het bos en je komt op een pad terecht die in tweeen splitst. je kan naar rechts en links.\n1: ga naar rechts.\n2:ga naar links")
 }
+  if (vraag2 == 1){
+    alert ("goed, het linkerpad is oneindig, je had nooit ergens uitgekomen.")
+  } else if (vraag2 == 2){
+    alert ("dit pad is oneindig, je had nooit ergens gekomen.")
+    location.reload(true)
+  }
 
-var vraag3 = prompt()
+  if (vraag2 == 1){
+    var vraag3 = prompt("je ziet een huisje.\n1: ga in het huisje\n2:vlucht verder het bos in")
+  }
+    if (vraag3 == 1){
+      alert ("fout, het huisje is bewoond, de man heeft de politie gebeld en je bent opgepakt! ")
+      location.reload (true)
+    } else if (vraag3 == 2){
+      alert ("goed, het huisje was bewoond!")
+    }
+    if (vraag3 == 2){
+      var vraag4 = prompt ("je ziet een auto met sleutels erin!\n1:Steel de auto en rij weg\n2:ren verder het bos in.")
+    } 
+      if (vraag4 == 1){
+        alert ("goed, van al dat rennen word je moe.")
+      } else if (vraag4 == 2){
+        alert ("dat is te vermoeind!")
+        location.reload (true)
+      }
 
- 
+      if (vraag4 == 1){
+        var vraag5 = prompt ("de tank van de auto is bijana leeg. Je bent in de buurt van een tankstation.\n1: ga naar het tankstation\n2: rij door op risico.")
+      }
+        if (vraag5 == 1){
+          alert ("fout! het station is afgezet met politie.")
+          location.reload(true)
+        } else if (vraag5 == 2){
+          alert ("goed, het tankstation was afgezet met politie.")
+        } 
 
-
-
-
+        if (vraag5 == 2){
+          var vraag6 = prompt ("je auto word nu gezocht en je hebt 2 keuzes.\n1: een aansteker kopen en de auto in de fik zetten\n2: de auto in het water rijden.")
+        }
+          if (vraag6 == 1){
+            alert ("fout, als je een aansteker koopt sta je op de cmaera bij de winkel")
+            location.reload (true)
+          } else if (vraag6 == 2){
+            alert ("goed, nu je auto in het water ligt zijn de de auto kwijt.")
+          }
     
-  
-  
 
-  
-  
-  
+            if (vraag6 == 2){
+              var vraag7 = promp("je besluit naar het buitenland te gaan.\n1: je gaat met het vliegtuig\n2: je gaat met de taxi")
+            }
+              if (vraag7 == 1){
+                alert ("goed! al zou je met de taxi gaan dan zou je opgepakt worden bij de tol.")
+              } else if (vraag7 == 2){
+                alert ("fout, je bent opgepakt bij de tol!")
+                location.reload(true)
+              }
 
-
-
-
+              if (vraag7 == 1){
+                var vraag8 = prompt("")
+              }
