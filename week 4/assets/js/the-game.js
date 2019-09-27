@@ -65,7 +65,7 @@ if (vraag1 == 1){
     
 
             if (vraag6 == 2){
-              var vraag7 = promp("je besluit naar het buitenland te gaan.\n1: je gaat met het vliegtuig\n2: je gaat met de taxi")
+              var vraag7 = prompt("je besluit naar het buitenland te gaan.\n1: je gaat met het vliegtuig\n2: je gaat met de taxi")
             }
               if (vraag7 == 1){
                 alert ("goed! al zou je met de taxi gaan dan zou je opgepakt worden bij de tol.")
@@ -75,5 +75,37 @@ if (vraag1 == 1){
               }
 
               if (vraag7 == 1){
-                var vraag8 = prompt("")
+                var vraag8 = prompt("je bent op schiphol en je hebt de keuze om naar:\n1:italie te gaan.\n2:Griekenland")
               }
+                if (vraag8 == 1){
+                  alert ("fout, ze zijn al opzoek naar je in italie.")
+                  location.reload(true)
+                } else if (vraag8 == 2){
+                  alert ("goed, Griekenland is nog niet op de hoogte van je ontsnapping.")
+                }
+
+                if (vraag8 == 2){
+                  var vraag9 = prompt("nu je in Griekenland bent kunt je naar:\n1: Het bos\n2: het strand")
+                }
+
+                   if (vraag9 == 1){
+                    alert ("het bos is een goede keus want je bent bedekt met bomen.")
+                  } else if (vraag9 == 2){
+                    alert ("fout, je staat in het open, iedereen kan je zien.")
+                    location.reload(true)
+                  }
+
+                  if (vraag9 == 1){
+                    var vraag10 = prompt("je bent nu in het bos,je ziet een luik.\n1:loop weg.\n2:ga in de luik.")
+                  }
+                    if (vraag10 == 1){
+                      alert ("fout, de luik zat vol etenswaren en was onbewoond.")
+                      location.reload
+                    } else if (vraag10 == 2){
+                      alert ("goed, de luik zit vol etenswaren, je hebt een slaapplek en het is onbewoond. je bent ontsnapt!")
+                    }
+
+                    if (vraag10 == 2){
+                      alert("je hebt de game uitgespeeld! klik op OK/ENTER om het opnieuw te spelen.")
+                      location.reload(true)
+                    }
