@@ -1,0 +1,26 @@
+.container{
+    width: 40%;
+    margin: 0 auto;
+    
+}
+h1 {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+h2{
+    font-size: 32px;
+    line-height: 32px;
+}
+p{
+    font-size: 32px;
+    line-height: 26px;
+}
+
+ul li{
+    padding-bottom: 10px;
+}
+ol li{
+    padding-bottom: 20px;
+}
+
