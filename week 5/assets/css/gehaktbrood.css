@@ -13,7 +13,7 @@ h2{
     line-height: 32px;
 }
 p{
-    font-size: 32px;
+    font-size: 20px;
     line-height: 26px;
 }
 
@@ -24,3 +24,12 @@ ol li{
     padding-bottom: 20px;
 }
 
+.eerstezin{
+    font-size: 24px;
+    line-height: 32px;
+}
+
+
+
+
+  
