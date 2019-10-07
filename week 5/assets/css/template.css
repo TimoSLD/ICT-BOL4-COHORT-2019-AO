@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/header_bg.jpg");
+    background-attachment: fixed;
+    background-size: cover; 
+}
+
+img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15%;
+    margin-bottom: auto;
+}
+.home{
+    display: block;
+    margin: auto;
+}
+.features{
+    display: block;
+
+}
+.pages{
+    display: block;
+    
+            
+   
+}
+.portfolio{
+    display: block;
+ 
+   
+}
+.blog{
+    display: block;
+   
+    
+}
+.contact{
+    display: block;
+    
+    
+}
+a{
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+}
+.topnav{
+    float: center;
+    text-align: center;
+    padding: auto;
+    text-decoration: none;
+    font-size: auto;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0px 25px;
+    text-decoration: none;
+}
+
