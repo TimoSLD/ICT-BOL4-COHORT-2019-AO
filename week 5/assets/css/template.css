@@ -19,27 +19,27 @@ img{
 }
 .features{
     display: block;
-
+    margin: auto;
 }
 .pages{
     display: block;
-    
+    margin: auto;
             
    
 }
 .portfolio{
     display: block;
- 
+    margin: auto;
    
 }
 .blog{
     display: block;
-   
+    margin: auto;
     
 }
 .contact{
     display: block;
-    
+    margin: auto;
     
 }
 a{
