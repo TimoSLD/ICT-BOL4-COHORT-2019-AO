@@ -1,0 +1,132 @@
+.container{
+    font-family: 'Lato', sans-serif;
+    max-width: 1100px;
+    margin: auto;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 105px 425px 425px 70px;
+
+}
+.logo{
+    padding: 10px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.navimg{
+    background-image: url("../../img/header_bg.png");
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.nav{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.header{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.headerimg{
+    background-image: url("../../img/banner_bg.png");
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.tekst{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.content1{
+    grid-column-start: 1;
+    grid-column-end: 2; 
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.content2{
+    grid-column-start: 2;
+    grid-column-end: 3; 
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.content3{
+    grid-column-start: 3;
+    grid-column-end: 4; 
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 4; 
+    grid-row-start: 4;
+    grid-row-end: 5; 
+    background-image: url("../../img/footer_bg.png");
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+}
+  
+li {
+    float: left;
+    padding-top: 20px;
+}
+  
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.img1{
+    margin: 10px;
+    padding: 10px 10px 10px 20px
+}
+.float-content1{
+      padding: 20px 10px 10px 60px
+}
+.float-content2{
+  padding: 20px 10px 10px 35px
+}
+.float-content3{
+    padding: 20px 60px 10px 10px
+}
+p{
+      font-size: 14px;
+      line-height: 20px;
+      float: left;
+      color: white;
+      padding: 0px 60px 0px 0px
+}
+.headtitle{
+    font-size: 26px;
+    line-height: 30px;
+    float: left;
+    margin: auto;
+    padding: 40px 0px 0px 0px;
+    color: white;
+}
+.floatp{
+      float: center;
+}
+h1{
+    font-size: 20px;
+    line-height: 22px;
+}
