@@ -6,7 +6,7 @@
 .grid-container{
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
-    grid-template-rows: 105px 425px 425px 70px;
+    grid-template-rows: 105px 425px 430px 70px;
 
 }
 .logo{
@@ -51,9 +51,9 @@
 }
 .content1{
     grid-column-start: 1;
-    grid-column-end: 2; 
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-column-end: 4; 
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 .content2{
     grid-column-start: 2;
@@ -67,7 +67,7 @@
     grid-row-start: 3;
     grid-row-end: 4;
 }
-.footer{
+footer{
     grid-column-start: 1;
     grid-column-end: 4; 
     grid-row-start: 4;
@@ -80,11 +80,11 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    float: right;
+    display: inline-block;
 }
   
 li {
-    float: left;
+    display: inline-block;
     padding-top: 20px;
 }
   
@@ -111,22 +111,24 @@ li a {
 p{
       font-size: 14px;
       line-height: 20px;
-      float: left;
-      color: white;
+      color: black;
       padding: 0px 60px 0px 0px
 }
 .headtitle{
     font-size: 26px;
     line-height: 30px;
-    float: left;
     margin: auto;
     padding: 40px 0px 0px 0px;
     color: white;
 }
-.floatp{
-      float: center;
-}
+
 h1{
     font-size: 20px;
     line-height: 22px;
+}
+.footer-tekst{
+    margin: 0 auto;
+    width: 89px;
+    padding:0px;
+    line-height: 70px;
 }
