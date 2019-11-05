@@ -1,0 +1,76 @@
+.container{
+    font-family: 'Archivo', sans-serif;
+    max-width: 1000px;
+    margin: auto;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 60px 300px 300px 150px 20px 20px 20px 10px;
+}
+.logo{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 0px 0px 0px 130px;
+}
+.header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+nav{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 0px 0px 0px 85px;
+    font-size: 12px;
+}
+li{
+    display: inline-block;
+}
+ul{
+    background-color: black;
+    position: relative;
+    top: 22px;
+    margin: 22px 25px 0px 25px;
+    width: 750px;
+}
+a{
+    color: white;
+    line-height: 40px;
+    margin: 0px 10px 0px 0px;  
+}
+.banner1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-left: 35px;
+    margin-top: 40px;
+}
+.banner2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: auto;
+}
+.banner3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-right: 35px;
+    margin-top: 40px;
+}
+p{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: #ffe100;
+}
