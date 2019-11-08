@@ -29,14 +29,32 @@ a{
     line-height: 40px;
     margin: 0px 10px 0px 0px;  
 }
+.banner1{
+    margin: 0 20px 0 0;
+}
+.banner3{
+    margin: 0 0 0 20px;
+}
 .middenstuk{
    background-color: #ffe100;
-   line-height: 125px;
+   line-height: 70px;
 }
 .p1{
     color: black;
     font-weight: 700;
-    line-height: 34px;
+    font-size: 34px;
+    padding: 0 0 0 205px;
+    display: inline-block;
+}
+.p2{
+    font-weight: 700;
+    font-size: 16px;
+    padding: 0 0 0 20px;
+    display: inline-block;
+}
+.button{
+    background-color: white;
+    margin: 0 0 0 400px;
 }
 .max-width{
     width: 100%;
@@ -50,7 +68,7 @@ a{
 }
 .geelblok{
     background-color: #ffe100;
-    line-height: 100px;
+    line-height: 65px;
     width: 300px;
     display: inline-block;
     margin: 0 14px;
@@ -63,4 +81,30 @@ hr{
     position:relative;
     bottom: 53px;
 }
+.contact{
+    width: 415px;
+    display: inline-block;
+    margin: 0 0 100px 20px;
+}
+.icons{
+    position: relative;
+    left: 32px;
+    top: 17px;
+    display: inline-block;
+}
+.over-ons{
+    width: 500px;
+    display: inline-block;
+}
 
+p{
+    display: inline-block;
+}
+.minitekst{
+    color: black;
+    position: relative;
+    left: 40px;
+    right: 100px;
+    bottom: 148;
+    text-align: left;
+}
