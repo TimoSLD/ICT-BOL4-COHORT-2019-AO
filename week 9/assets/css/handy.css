@@ -1,5 +1,18 @@
 body{
     font-family: 'Archivo', sans-serif;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 550px 350px 180px 60px 186px 150px 450px 80px;
+}
+.grid-container-images{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 220px;
+    column-gap: 33px;
+}
+.grid-container-split{
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 .logo{
     margin: 0px 0px 0px 130px;
@@ -11,8 +24,14 @@ nav{
     position: relative;
     top: 0px;
 }
-.header{
-    width: 100%;
+.banner{
+    background-image: URL('../../B1W9O1-Handy/img/header.jpg');
+}
+.fotos{
+    padding:50px 0 50px 0;
+}
+.ribbon{
+    background-image:URL('../../B1W9O1-Handy/img/footer.jpg');
 }
 li{
     display: inline-block;
@@ -29,21 +48,15 @@ a{
     line-height: 40px;
     margin: 0px 10px 0px 0px;  
 }
-.banner1{
-    margin: 0 20px 0 0;
-}
-.banner3{
-    margin: 0 0 0 20px;
-}
 .middenstuk{
    background-color: #ffe100;
-   line-height: 70px;
+   line-height: 0px;
 }
 .p1{
     color: black;
     font-weight: 700;
     font-size: 34px;
-    padding: 0 0 0 205px;
+    padding: 55px 0 0 205px;
     display: inline-block;
 }
 .p2{
@@ -54,7 +67,18 @@ a{
 }
 .button{
     background-color: white;
-    margin: 0 0 0 400px;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin: 0 0 0 300px;
+  padding: 0 40px 0 40px;
+  line-height: 40px;
+  font-weight: 600;
 }
 .max-width{
     width: 100%;
@@ -68,7 +92,7 @@ a{
 }
 .geelblok{
     background-color: #ffe100;
-    line-height: 65px;
+    line-height: 60px;
     width: 300px;
     display: inline-block;
     margin: 0 14px;
@@ -84,7 +108,7 @@ hr{
 .contact{
     width: 415px;
     display: inline-block;
-    margin: 0 0 100px 20px;
+    padding:0 0 0 170px;
 }
 .icons{
     position: relative;
@@ -100,11 +124,44 @@ hr{
 p{
     display: inline-block;
 }
-.minitekst{
+.minititel{
     color: black;
     position: relative;
     left: 40px;
     right: 100px;
     bottom: 148;
     text-align: left;
+    font-weight: 700;
+    font-size: 22px
+}
+.minitext1{
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    top: 25px;
+    left: 105px;
+}
+.minitext2{
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    top: 25px;
+    left: 427px;
+}
+.minitext3{
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    top: 25px;
+    left: 761px;
+}
+.contact-text{
+    margin: 15px;
+}
+footer{
+    background-color: black;
+}
+.footer-wit{
+    color: white;
+    margin: 30px 0 0 950px;
 }
