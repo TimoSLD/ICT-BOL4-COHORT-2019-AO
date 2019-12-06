@@ -9,10 +9,11 @@ document.getElementById('title').innerHTML = 'welkom bij de game!';
 document.getElementById("description").innerHTML = "";
 document.getElementById("button1").innerHTML = "beginnen";
 document.getElementById("button1").onclick = function() {Bos()};
+// document.getElementById("button1").setAttribute('onclick', 'Bos');
 document.getElementById("button2").style.display = 'none'
 document.getElementById("button3").style.display = 'none'
 document.getElementById("inventoryItem").style.display = "none";
-document.getElementById('image').src = "img/horrorbegin.jfif";
+image.src = "img/horrorbegin.jfif";
 
 //bos starten.
 function Bos(){
@@ -43,17 +44,17 @@ function bosRechts(){
 }
 //keuze links.
 function bosLinks(){
-    document.getElementById('title').innerHTML = 'het horror bos';
-    document.getElementById("description").innerHTML = 'je ziet een pad voor je. Je loopt verder en je ziet een schatkist.';
-    document.getElementById('button1').innerHTML = 'open de kist';
-    document.getElementById('button1').onclick = function() {geenSleutel()};
-    document.getElementById('button2').innerHTML = 'laat de kist liggen';
-    document.getElementById('button2').onclick = function() {manTegenkomen()};
-    document.getElementById("button2").style.display = "inline-block";
-    document.getElementById('button3').innerHTML = 'kist meenemen';
-    document.getElementById('button3').onclick = function() {kistMeenemen()};
-    document.getElementById("button3").style.display = "inline-block";
-    document.getElementById('image').src = 'img/schatkist.jpg';   
+    title.innerHTML = 'het horror bos';
+    description.innerHTML = 'je ziet een pad voor je. Je loopt verder en je ziet een schatkist.';
+    button1.innerHTML = 'open de kist';
+    button1.onclick = function() {geenSleutel()};
+    button2.innerHTML = 'laat de kist liggen';
+    button2.onclick = function() {manTegenkomen()};
+    button2.style.display = "inline-block";
+    button3.innerHTML = 'kist meenemen';
+    button3.onclick = function() {kistMeenemen()};
+    button3.style.display = "inline-block";
+    image.src = 'img/schatkist.jpg';   
 }
 //geen sleutel, probeer wat anders.
 function geenSleutel(){
@@ -89,7 +90,7 @@ function manTegenkomen(){
     document.getElementById("button2").style.display = "inline-block";
     document.getElementById("button3").style.display = "none";
     document.getElementById('image').src = 'img/man.jpg';   
-    invetoryItem.src = 'img/schatkist.jpg';
+    inventoryItem.src = 'img/schatkist.jpg';
 }
 //man aangesproken dus dood.
 function dood(){
@@ -114,19 +115,39 @@ function doorlopen(){
 
 //sleutel gevonden in het huisje.
 function sleutelGevonden(){
-    key = true
     document.getElementById('title').innerHTML = 'het horror bos';
     document.getElementById("description").innerHTML = 'je hebt een sleutel gevonden in het huisje!';
+    document.getElementById('button1').style.display = 'inline-block';
     document.getElementById('button1').innerHTML = 'sleutel oppakken';
     document.getElementById('button1').onclick = function() {kistOpenen()};
+    document.getElementById('button2').style.display = 'inline-block';
+    document.getElementById('button2').innerHTML = 'sleutel laten liggen';
+    document.getElementById('button2').onclick = function() {deurDicht()};
+    document.getElementById('button2').style.display = 'inline-block;'
+    document.getElementById("button3").style.display = "none";
+    document.getElementById('image').src = 'img/download.jfif';  
+    inventoryItem.src = 'img/schatkist.jpg';
+}
+//deur dichtgewaaid. sleutel toch oppakken.
+function deurDicht(){
+    document.getElementById('title').innerHTML = 'het horror bos';
+    document.getElementById("description").innerHTML = 'de deur is dichtgewaaid en opslot gegaan.\
+    je hebt de sleutel nodig om er uit te komen.';
+    document.getElementById('button1').innerHTML = 'teruglopen en sleutel oppakken';
+    document.getElementById('button1').onclick = function() {sleutelGevonden()};
     document.getElementById("button2").style.display = "none";
     document.getElementById("button3").style.display = "none";
-    document.getElementById('image').src = 'img/inventory.jpg';  
-    inventoryItem.src = 'img/download.jfif'; 
-    inventoryItem.style.display = 'inline-block'
-    invetoryItem.src = 'img/schatkist.jpg';
-    inventoryItem.style.display = 'inline-block'
-    
+    document.getElementById('image').src = 'img/deurdicht.jpg';   
+}
+
+
+//deur openen om huis te openen.
+function huisOpenen(){
+    document.getElementById('title').innerHTML = 'het horror bos';
+    document.getElementById("description").innerHTML = 'je hebt de sleutel opgepakt en je kan de deur openen.';
+    document.getElementById('button1').innerHTML = 'deur openen';
+    document.getElementById('button1').onclick = function() {kistOpenen()};
+    document.getElementById('image').src = 'img/deurdicht.jpg';        
 }
 
 //beer tegen komen
@@ -142,17 +163,50 @@ function beren(){
 }
 //je hebt een sleutel gevonden dus je kan de kist openen.
 function kistOpenen(){
-    document.getElementById('title').innerHTML = 'het horror bos';
-    document.getElementById("description").innerHTML = 'je kan de kist openen!';
-    document.getElementById('button1').innerHTML = 'kist openen';
-    document.getElementById('button1').onclick = function() {zwaardGekregen()};
-    document.getElementById("button2").style.display = "none";
-    document.getElementById("button3").style.display = "none";
-    document.getElementById('image').src = 'img/schatkist.jpg';
-    if (kist === false){
-        teruglopenDood();
+    key = true;
+     if (kist === false){
+        terugLopenKist();
+        
     }
+    else{
+         document.getElementById('title').innerHTML = 'het horror bos';
+        document.getElementById("description").innerHTML = 'je kan de kist openen!';
+        document.getElementById('button1').innerHTML = 'kist openen';
+        document.getElementById('button1').onclick = function() {zwaardGekregen()};
+        document.getElementById('button2').innerHTML = 'kist niet openen';
+        document.getElementById('button2').onclick = function() {kistTochOpenen()};
+        document.getElementById("button3").style.display = "none";
+        document.getElementById('image').src = 'img/schatkist.jpg';
+        document.getElementById("inventoryItem").src = "img/download.jfif";
+        document.getElementById("inventoryItem").style.display = 'inline-block';
+        }
+   
+   
 }
+
+//je had de kist moeten openen, nu dood.
+function kistTochOpenen(){
+    document.getElementById('title').innerHTML = 'het horror bos';
+    document.getElementById("description").innerHTML = 'je komt een man tegen. je had de kist moeten openen want\
+    daar zat een zwaard in en je had jezelf dan kunnen verdedigen.';
+    document.getElementById('button1').innerHTML = 'opnieuw beginnen';
+    document.getElementById('button1').onclick = function() {Bos()};
+    document.getElementById("button2").style.display = "none";
+    document.getElementById("button3").style.display = "none";    
+}
+//kist halen of niet
+function terugLopenKist(){
+    document.getElementById('title').innerHTML = 'het horror bos';
+    document.getElementById("description").innerHTML = 'wil je de kist halen of wil je verder lopen?';
+    document.getElementById('button1').innerHTML = 'kist halen';
+    document.getElementById('button1').onclick = function() {teruglopenDood()};
+    document.getElementById('button2').innerHTML = 'verder lopen';
+    document.getElementById('button2').onclick = function() {beren()};
+    document.getElementById("button3").style.display = "none";
+    document.getElementById("image").src = 'img/pad.jpg';
+
+}
+
 //dood gaan door naar man terug te lopen.
 function teruglopenDood(){
     document.getElementById('title').innerHTML = 'het horror bos';
@@ -164,6 +218,18 @@ function teruglopenDood(){
     document.getElementById("button3").style.display = "none";
     document.getElementById("image").src = 'img/man.jpg';
 
+}
+//naar de man met zwaard.
+function naarManTwijfel(){
+    document.getElementById('title').innerHTML = 'het horror bos';
+    document.getElementById("description").innerHTML = 'je ziet de man. weet je zeker dat je naar de man wilt gaan?';
+    document.getElementById('button1').innerHTML = 'ja';
+    document.getElementById('button1').onclick = function() {naarMan()};
+    document.getElementById('button2').innerHTML = 'toch teruggaan';
+    document.getElementById('button2').onclick = function() {berenZwaard()};
+    document.getElementById("button2").style.display = "inline-block";
+    document.getElementById("inventoryItem").src = 'img/zwaard.jpeg';
+    document.getElementById('image').src = 'img/pad.jpg';
 }
 // zwaard gekregen uit de kist.
 function zwaardGekregen(){
@@ -192,18 +258,7 @@ function teruglopen(){
     document.getElementById("inventoryItem").src = 'img/zwaard.jpeg';
     document.getElementById('image').src = 'img/paden.jpg';
 }
-//naar de man met zwaard.
-function naarManTwijfel(){
-    document.getElementById('title').innerHTML = 'het horror bos';
-    document.getElementById("description").innerHTML = 'je ziet de man. weet je zeker dat je naar de man wilt gaan?';
-    document.getElementById('button1').innerHTML = 'ja';
-    document.getElementById('button1').onclick = function() {naarMan()};
-    document.getElementById('button2').innerHTML = 'toch teruggaan';
-    document.getElementById('button2').onclick = function() {berenZwaard()};
-    document.getElementById("button2").style.display = "inline-block";
-    document.getElementById("inventoryItem").src = 'img/zwaard.jpeg';
-    document.getElementById('image').src = 'img/pad.jpg';
-}
+
 //uitgeput door doorlopen.
 function berenZwaard(){
     document.getElementById('title').innerHTML = 'het horror bos';
@@ -247,7 +302,7 @@ function manVragen(){
     document.getElementById('button3').innerHTML = 'wegrennen';
     document.getElementById('button3').onclick = function() {berenZwaard()};
     document.getElementById("button3").style.display = "inline-block";
-    document.getElementById('image').src = 'img/schatkist.jpg';   
+    document.getElementById('image').src = 'img/man.jpg';   
 }
 
 //de man wordt boos.
