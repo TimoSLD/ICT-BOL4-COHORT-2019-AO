@@ -1,3 +1,0 @@
-1. noem de opbouw van een HTML pagina. 2. Wanneer gebruik je const inplaats var? 3. Heeft de tag <img> een end tag? 4. wat doet een conditional statement? 
-5. wat is het gevolg van een conditional statement? 6. Wat kan je met een while loop? 7. wat kan je met een for loop? 8. Wat geeft De CSS Grid Layout je de mogelijkheid? 
-9. Als je een function hebt aangemaakt, hoe roep je hem dan op. 10. Hoe worden variabelen binnen een fucntion genoemd?
